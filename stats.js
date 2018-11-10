@@ -1,11 +1,10 @@
 $(document).ready(function () {
 
-// var numbers =[];
 
 $("#sortBtn").on("click", function(){
     var input =[];
     input.push($("#numberInputBox").val());
-       //--code below: original user input returns as one object. The object needs to be converted to a string, then split, then coverted to a number. THEN the .sort() method is used to arrange the numbers in numerical order.
+       //--code below: original user input returns as one object. The object needs to be converted to a string, then split, then converted to a number. THEN the .sort() method is used to arrange the numbers in numerical order.
    var newArr = input.toString().split(" ").map(Number);
   
    var numSorted = newArr.sort(function(a, b){
@@ -29,6 +28,7 @@ $("#sortBtn").on("click", function(){
     $('#medianBox').html(medianStat);
     
   });
+  
   $('#reloadBtn').on("click", function(){
       location.reload();
   })
