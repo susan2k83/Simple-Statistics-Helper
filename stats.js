@@ -29,8 +29,12 @@ $("#sortBtn").on("click", function(){
     
   });
   
-  $('#reloadBtn').on("click", function(){
+  $('#reloadBtn_1').on("click", function(){
       location.reload();
+  })
+
+  $('#reloadBtn_2').on("click", function(){
+    location.reload();
   })
 
 });
