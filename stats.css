@@ -1,8 +1,43 @@
 body {
-    background-color: aliceblue;
-    margin: 10%;
-    border: solid black 1px;
+    margin: 3% 10% 10% 10%;
+    border: solid #F1F1F1 2px;
     border-radius: 3px;
     padding: 10px;
-    
+}
+.header-image {
+    /* the linear gradient is used to create opacity without affecting the text-child elements */
+     background-image:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("mixed_numbers.jpg");
+     height: 185px;
+     width: 100%;
+     border-radius: 3px;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-bottom: 5px;
+     text-align: center;  
+ }
+ div.header-text-container {
+    /* padding-top: 40px; 
+     position: relative; */
+    display: inline-block;
+    text-align: center;  
+ }
+ .header-text {
+    display: inline-block;
+    margin-top: 10%;
+    text-align: center;
+    border: solid #969595 2px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #F1F1F1;
+ }
+ .btn-light {
+    webkit-box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow:    0px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:         0px 3px 0px rgba(0, 0, 0, 0.3);
+}
+main {
+    background-color: #BBBABA;
+    padding:20px 10px 10px 10px;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 3px;
 }

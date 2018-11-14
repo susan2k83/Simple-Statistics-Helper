@@ -5,6 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A quick tool to sort a list of numbers and return the mean mode and median">
   <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -16,19 +17,31 @@
 </head>
 
 <body>
-  <h2>Simple Statistics Helper</h2>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">To begin, input numbers below and separate numbers with a space <strong>NO comma.</strong></label>
+  <header class="header-image">
+    <div class="header-text-container">
+      <div class="header-text">
+      <h2 >Simple Statistics Helper
+      </h2>
+      <p>A quick tool to sort a list of numbers and return the <strong>mean mode</strong> and <strong>median</strong></p>
+      </div>
+    </div>
+  </header>
+  <main class="">
+   <div class="form-group">
+    <label for="exampleFormControlTextarea1">
+      <h5>To begin, input numbers below and separate numbers with a space <strong>NO comma.</strong></h5></label>
     <textarea class="form-control" id="numberInputBox" rows="3" autofocus="autofocus"></textarea>
   </div>
-  <button id="sortBtn" type="submit" class="btn btn-outline-primary">Sort</button>
 
-  <button id="reloadBtn_1" type="submit" class="btn btn-outline-primary" style="float: right;">Clear All Fields</button>
+  <button id="sortBtn" type="submit" class="btn btn-light">Sort</button>
+  
+  <button id="reloadBtn_1" type="submit" class="btn btn-light" style="float: right;">Clear All Fields</button>
   </br>
   </br> 
+  <h5>Results:</h5>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Sorted in ascending order:</label>
-    <textarea class="form-control" id="numberSortedBox" rows="3"></textarea>
+    <textarea class="form-control" id="numberSortedBox" rows="3" ></textarea>
   </div>
 
   <div class="form-group">
@@ -36,17 +49,19 @@
     <textarea class="form-control" id="meanBox" rows="1"></textarea>
   </div>
 
-  <div class="form-group">
+  <div id="mode-median-container" class="row">
+   <div class="form-group col-sm-6">
     <label for="exampleFormControlTextarea1">Mode:</label>
-    <textarea class="form-control" id="modeBox" rows="1"></textarea>
-  </div>
+    <textarea class="form-control " id="modeBox" rows="1"></textarea>
+   </div>
 
-  <div class="form-group">
+   <div class="form-group col-sm-6">
     <label for="exampleFormControlTextarea1">Median:</label>
     <textarea class="form-control" id="medianBox" rows="1"></textarea>
+   </div>
   </div>
-  
-  <button id="reloadBtn_2"  type="submit" class="btn btn-outline-primary">Clear All Fields</button>
+  <button id="reloadBtn_2"  type="submit" class="btn btn-light">Clear All Fields</button>
+</main>
   
   
   <!-- Optional JavaScript -->
