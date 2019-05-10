@@ -41,3 +41,14 @@ main {
     border-width: 1px 1px 1px 1px;
     border-radius: 3px;
 }
+    @media only screen and (max-width: 750px) {
+        body {
+       margin: 0px;
+         
+        }
+        .header-text, h2 {
+            font-size: 1.25em;
+        }
+
+
+    }
